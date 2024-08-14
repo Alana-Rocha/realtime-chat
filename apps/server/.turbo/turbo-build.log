@@ -1,0 +1,4 @@
+yarn run v1.21.1
+$ swc src -d dist
+Successfully compiled: 1 file with swc (129.01ms)
+Done in 0.49s.

@@ -1,0 +1,21 @@
+{
+  "name": "realtime-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private":"true",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "start": "node apps/server/dist/main",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "dependencies": {
+    "turbo": "^2.0.13"
+  },
+  "packageManager": "yarn@1.22.19"
+}
