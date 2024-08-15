@@ -1,9 +1,12 @@
 {
   "name": "realtime-chat",
+  "engines": {
+    "node": ">=18"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "private":"true",
+  "private": "true",
   "workspaces": [
     "apps/*"
   ],
