@@ -18,7 +18,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "dependencies": {
-    "turbo": "^2.0.13"
+    "turbo": "^2.0.14"
   },
   "packageManager": "yarn@1.22.19"
 }

@@ -1,2 +1,48 @@
 2024-08-16T11:56:29.867440Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies\\1.cookie"), AnchoredSystemPathBuf(".turbo\\cookies")}
 2024-08-16T11:56:29.867480Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-08-16T11:59:45.880533Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies\\1.cookie"), AnchoredSystemPathBuf(".turbo\\cookies")}
+2024-08-16T11:59:45.880578Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-08-16T12:01:16.078230Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\package.json")}
+2024-08-16T12:01:16.078279Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:01:16.282484Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server"), AnchoredSystemPathBuf("apps\\server\\package-lock.json"), AnchoredSystemPathBuf("apps\\server\\yarn.lock")}
+2024-08-16T12:01:16.282503Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:01:16.384569Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\yarn.lock")}
+2024-08-16T12:01:16.384586Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:01:16.384611Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-08-16T12:03:03.788014Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server"), AnchoredSystemPathBuf("apps\\server\\package-lock.json")}
+2024-08-16T12:03:03.788033Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:03:31.579978Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\package.json")}
+2024-08-16T12:03:31.579997Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:03:38.380133Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\package.json")}
+2024-08-16T12:03:38.380148Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:03:41.190703Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies"), AnchoredSystemPathBuf(".turbo\\cookies\\2.cookie")}
+2024-08-16T12:03:41.190720Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-08-16T12:03:41.877803Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\package.json")}
+2024-08-16T12:03:41.877816Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:03:41.979308Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\package.json")}
+2024-08-16T12:03:41.979350Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:03:41.979391Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-08-16T12:03:42.088636Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\yarn.lock"), AnchoredSystemPathBuf("apps\\server\\package-lock.json"), AnchoredSystemPathBuf("apps\\server")}
+2024-08-16T12:03:42.088650Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:03:42.221464Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\yarn.lock")}
+2024-08-16T12:03:42.221478Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:03:42.221500Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-08-16T12:03:47.282447Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\package-lock.json"), AnchoredSystemPathBuf("apps\\server\\yarn.lock")}
+2024-08-16T12:03:47.282464Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:03:47.358906Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-08-16T12:03:47.385791Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\yarn.lock")}
+2024-08-16T12:03:47.385806Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:03:47.385835Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-08-16T12:03:58.076657Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\package.json")}
+2024-08-16T12:03:58.076688Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:04:00.485559Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\package-lock.json"), AnchoredSystemPathBuf("apps\\server")}
+2024-08-16T12:04:00.485578Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:04:03.576876Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("yarn.lock"), AnchoredSystemPathBuf("")}
+2024-08-16T12:04:03.576896Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-08-16T12:04:04.176172Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\package.json")}
+2024-08-16T12:04:04.176187Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:04:04.376410Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\package-lock.json"), AnchoredSystemPathBuf("apps\\server\\yarn.lock"), AnchoredSystemPathBuf("apps\\server")}
+2024-08-16T12:04:04.376424Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:04:04.488447Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\server\\yarn.lock")}
+2024-08-16T12:04:04.488463Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("server"), path: AnchoredSystemPathBuf("apps\\server") }}))
+2024-08-16T12:04:04.513953Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun

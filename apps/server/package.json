@@ -16,7 +16,6 @@
   "dependencies": {
     "express": "^4.19.2",
     "luxon": "^3.5.0",
-    "node-ts-base": "file:",
     "socket.io": "^4.7.5",
     "vite": "^5.4.0"
   },
