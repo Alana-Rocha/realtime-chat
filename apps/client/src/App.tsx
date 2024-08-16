@@ -1,9 +1,10 @@
 import { Flex } from "@chakra-ui/react";
+import { useState } from "react";
 import { Chat } from "./components/Chat/Chat";
 import { Join } from "./components/Join/Join";
 
 export const App = () => {
-  // const [count, setCount] = useState(0);
+  const [chatVisibility, setChatVisibility] = useState(false);
 
   return (
     <Flex
@@ -14,8 +15,11 @@ export const App = () => {
       height="100vh"
       gap={10}
     >
-      <Join />
-      <Chat />
+      {chatVisibility ? (
+        <Chat />
+      ) : (
+        <Join setChatVisibility={setChatVisibility} />
+      )}
     </Flex>
   );
 };
