@@ -17,8 +17,7 @@ export const Join = ({ setChatVisibility, setSocket }: JoinProps) => {
       const username = usernameRef.current?.value;
       console.log(username);
       if (!username?.trim()) return;
-      const socket = io("ws://localhost:3001");
-      // console.log(socket);
+      const socket = io("ws://192.168.13.58:3001");
       socket.emit("set_username", username);
       setSocket(socket);
       setChatVisibility(true);
