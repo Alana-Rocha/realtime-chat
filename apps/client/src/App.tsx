@@ -1,10 +1,12 @@
 import { Flex } from "@chakra-ui/react";
 import { useState } from "react";
+import { Socket } from "socket.io-client";
 import { Chat } from "./components/Chat/Chat";
 import { Join } from "./components/Join/Join";
 
 export const App = () => {
   const [chatVisibility, setChatVisibility] = useState(false);
+  const [socket, setSocket] = useState<Socket | null>(null);
 
   return (
     <Flex
@@ -16,9 +18,9 @@ export const App = () => {
       gap={10}
     >
       {chatVisibility ? (
-        <Chat />
+        <Chat socket={socket} />
       ) : (
-        <Join setChatVisibility={setChatVisibility} />
+        <Join setChatVisibility={setChatVisibility} setSocket={setSocket} />
       )}
     </Flex>
   );

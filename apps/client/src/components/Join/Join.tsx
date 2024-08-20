@@ -1,24 +1,32 @@
 import { Flex, Heading } from "@chakra-ui/react";
 import { useRef } from "react";
-import io from "socket.io-client";
+import io, { Socket } from "socket.io-client";
 import { Button } from "../Button";
 import { Input } from "../Input";
 
-interface JoinProps {
+type JoinProps = {
   setChatVisibility: (visible: boolean) => void;
-}
+  setSocket: (socket: Socket) => void;
+};
 
-export const Join = ({ setChatVisibility }: JoinProps) => {
+export const Join = ({ setChatVisibility, setSocket }: JoinProps) => {
   const usernameRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = () => {
-    if (usernameRef.current) {
-      const username = usernameRef.current.value;
-      if (username.trim()) return;
-      const socket = io("http://localhost:3001");
+    try {
+      const username = usernameRef.current?.value;
+      console.log(username);
+      if (!username?.trim()) return;
+      const socket = io("ws://localhost:3001");
+      // console.log(socket);
+      socket.emit("set_username", username);
+      setSocket(socket);
       setChatVisibility(true);
+    } catch (error) {
+      console.log(error);
     }
   };
+
   return (
     <Flex flexDir="column" gap={6} alignItems="center" justifyContent="center">
       <Heading size="2xl" justifyContent="center" color="#fff">
