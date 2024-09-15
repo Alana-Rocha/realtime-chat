@@ -1,4 +1,16 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import {
+  Heading,
+  Card,
+  ButtonGroup,
+  CardBody,
+  CardFooter,
+  Divider,
+  Stack,
+  Flex,
+  Image,
+  Text,
+  Avatar,
+} from "@chakra-ui/react";
 import { FC, useEffect, useRef, useState } from "react";
 import { Socket } from "socket.io-client";
 import { Button } from "../Button";
@@ -30,6 +42,7 @@ export const Chat: FC<ChatProps> = ({ socket }) => {
   const handleSubmit = () => {
     try {
       const message = messageRef.current?.value;
+      console.log(message);
       if (!message?.trim) return;
       socket?.emit("message", message);
       clearInput();
@@ -44,23 +57,26 @@ export const Chat: FC<ChatProps> = ({ socket }) => {
     }
   };
 
-  // console.log(mew)
   return (
-    <Flex flexDir="column" gap={6} alignItems="center" justifyContent="center">
-      <Heading size="2xl" justifyContent="center" color="#fff">
-        Chat
-      </Heading>
-      {messageList.map((message, index) => (
-        <Heading key={index}>
-          {message.author}: {message.text}
-        </Heading>
-      ))}
-      <Flex gap={2} flexDir="column">
-        <Input type="text" placeholder="Mensagem" ref={messageRef} />
-        <Button w="100%" onClick={() => handleSubmit()}>
-          Enviar
-        </Button>
-      </Flex>
-    </Flex>
+    <Card maxW="sm">
+      <CardBody>
+        <Stack mt="0" spacing="3">
+          <Flex gap={2} alignItems="center">
+            <Avatar
+              size="sm"
+              name="Ryan Florence"
+              src="https://bit.ly/ryan-florence"
+            />{" "}
+            <Heading size="md">Alana</Heading>
+          </Flex>
+          {/* <Heading size="md">{messageList[0]?.author}</Heading> */}
+          <Text>{messageList[0]?.text}</Text>
+        </Stack>
+      </CardBody>
+      <Divider />
+      <CardFooter>
+        <Input placeholder="Mensagem"></Input>
+      </CardFooter>
+    </Card>
   );
 };

@@ -4,6 +4,9 @@ import io, { Socket } from "socket.io-client";
 import { Button } from "../Button";
 import { Input } from "../Input";
 
+// const PORT = process.env;
+// console.log(PORT)
+
 type JoinProps = {
   setChatVisibility: (visible: boolean) => void;
   setSocket: (socket: Socket) => void;
@@ -17,7 +20,7 @@ export const Join = ({ setChatVisibility, setSocket }: JoinProps) => {
       const username = usernameRef.current?.value;
       console.log(username);
       if (!username?.trim()) return;
-      const socket = io("ws://192.168.13.58:3001");
+      const socket = io(`${"ws://192.168.18.10:3001"}`);
       socket.emit("set_username", username);
       setSocket(socket);
       setChatVisibility(true);

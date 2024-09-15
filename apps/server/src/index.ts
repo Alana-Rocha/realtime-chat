@@ -1,6 +1,6 @@
 import express from "express";
 import { createServer } from "http";
-import { join } from "path";
+import path, { join } from "path";
 import { Server } from "socket.io";
 
 const PORT = 3001;
@@ -8,9 +8,8 @@ const app = express();
 const server = createServer(app);
 app.use(express.static(join(__dirname, "../../../client/dist")));
 
-app.get("/", (req, res) => {
-  console.log(__dirname);
-  res.sendFile("index.html");
+app.get("/", (_req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 const io = new Server(server, {

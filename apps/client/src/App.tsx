@@ -17,11 +17,11 @@ export const App = () => {
       height="100vh"
       gap={10}
     >
-      {chatVisibility ? (
-        <Chat socket={socket} />
-      ) : (
+      {/* {chatVisibility ? ( */}
+      <Chat socket={socket} />
+      {/* ) : (
         <Join setChatVisibility={setChatVisibility} setSocket={setSocket} />
-      )}
+      )} */}
     </Flex>
   );
 };
