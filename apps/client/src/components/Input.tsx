@@ -27,10 +27,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             borderRadius="4px"
             border="1px solid #fff"
             _hover={{}}
-            // onKeyDown={(e) => {
-            //   if (e.key === "Enter" && btnOnSubmit )
-            //     btnOnSubmit();
-            // }}
             _focusVisible={{ borderColor: "#c9c8c3" }}
             {...rest}
           />

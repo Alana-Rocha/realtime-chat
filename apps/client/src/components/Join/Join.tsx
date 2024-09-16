@@ -4,6 +4,9 @@ import io, { Socket } from "socket.io-client";
 import { Button } from "../Button";
 import { Input } from "../Input";
 
+// const PORT = process.env;
+// console.log(PORT)
+
 type JoinProps = {
   setChatVisibility: (visible: boolean) => void;
   setSocket: (socket: Socket) => void;
