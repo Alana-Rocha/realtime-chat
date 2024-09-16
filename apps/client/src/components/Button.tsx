@@ -17,7 +17,6 @@ export const Button = ({ children, ...rest }: ButtonPropsChakra) => {
       transition=".3s"
       _hover={{ bgColor: "#210840" }}
       {...rest}
-      //   maxW="200px"
     >
       {children}
     </ButtonChakra>

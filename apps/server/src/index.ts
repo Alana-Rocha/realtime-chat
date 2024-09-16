@@ -1,3 +1,4 @@
+import console from "console";
 import express from "express";
 import { createServer } from "http";
 import { join } from "path";
@@ -21,7 +22,6 @@ const io = new Server(server, {
 
 io.on("connection", (socket) => {
   console.log("usuário conectado!", socket.id);
-
   socket.on("disconnect", (reason) => {
     console.log("Usuário desconectado!", socket.id);
   });
